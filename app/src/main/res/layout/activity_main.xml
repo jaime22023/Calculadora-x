@@ -16,11 +16,12 @@
 
         <TextView
             android:id="@+id/solucion"
+            android:background="#A1C1E8"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:textColor="#131313"
-            android:text="@string/_0"
+            android:textColor="#272B2A"
+            android:text="0"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -33,34 +34,38 @@
 
         <Button
             android:id="@+id/num_uno"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_dos"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_2"
+            android:layout_weight="1"
+
+            android:layout_width="0dp"
+            android:text="2"
+            android:layout_height="wrap_content"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_tres"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_multiply"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/x"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="X"
             android:textSize="24sp" />
 
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,30 +75,34 @@
 
         <Button
             android:id="@+id/num_cuatro"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="4"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_cinco"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_seis"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="6"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_divide"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/div"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -106,30 +115,34 @@
 
         <Button
             android:id="@+id/num_siete"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_7"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="7"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_ocho"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_8"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="8"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_nueve"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_9"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="9"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_sum"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/mas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -141,32 +154,49 @@
 
         <Button
             android:id="@+id/num_borrart"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/DEL"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="DEL"
             android:textSize="24sp" />
-
-
 
         <Button
             android:id="@+id/num_cero"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/_0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="0"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_borrar"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/C"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="C"
             android:textSize="24sp" />
 
         <Button
             android:id="@+id/num_resta"
-            android:layout_width="80dp"
-            android:layout_height="60dp"
-            android:text="@string/res"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
             android:textSize="24sp" />
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/igual"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:textSize="24sp" />
+    </LinearLayout>
     </LinearLayout>

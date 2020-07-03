@@ -9,15 +9,15 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private  String number ="";
-    public double num1 = 0;
+    private  String numero ="";
+    private double num1 = 0;
     private double num2 = 0;
-    protected String symbol;
+    private String symbol ="";
 
 
-    private TextView solucion;
-    private Button keyPad1, keyPad2, keyPad3, keyPad4, keyPad5, keyPad6, keyPad7, keyPad8, keyPad9, keyPad0;
-    private Button keyPadSum, keyPadresta, keyPadMultiply, KeyPaddivide, keyborrar, keyborrart;
+    private TextView resultado;
+    private Button key_Pad1, key_Pad2, key_Pad3, key_Pad4, key_Pad5, key_Pad6, key_Pad7, key_Pad8, key_Pad9, key_Pad0;
+    private Button key_PadSum, key_Padresta, key_PadMultiply, Key_Paddivide, key_padborrar, key_padborrart, key_padigual;
 
 
     @Override
@@ -26,43 +26,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-        solucion =  findViewById(R.id.solucion);
+        resultado =  findViewById(R.id.solucion);
 
-        keyPad1 = findViewById(R.id.num_uno);
-        keyPad2 = findViewById(R.id.num_dos);
-        keyPad3 = findViewById(R.id.num_tres);
-        keyPad4 = findViewById(R.id.num_cuatro);
-        keyPad5 = findViewById(R.id.num_cinco);
-        keyPad6 = findViewById(R.id.num_seis);
-        keyPad7 = findViewById(R.id.num_siete);
-        keyPad8 = findViewById(R.id.num_ocho);
-        keyPad9 = findViewById(R.id.num_nueve);
-        keyPad0 = findViewById(R.id.num_cero);
+        key_Pad1 = findViewById(R.id.num_uno);
+        key_Pad2 = findViewById(R.id.num_dos);
+        key_Pad3 = findViewById(R.id.num_tres);
+        key_Pad4 = findViewById(R.id.num_cuatro);
+        key_Pad5 = findViewById(R.id.num_cinco);
+        key_Pad6 = findViewById(R.id.num_seis);
+        key_Pad7 = findViewById(R.id.num_siete);
+        key_Pad8 = findViewById(R.id.num_ocho);
+        key_Pad9 = findViewById(R.id.num_nueve);
+        key_Pad0 = findViewById(R.id.num_cero);
 
-        keyPadSum = findViewById(R.id.num_sum);
-        keyPadresta = findViewById(R.id.num_resta);
-        keyPadMultiply = findViewById(R.id.num_multiply);
-        KeyPaddivide = findViewById(R.id.num_divide);
-        keyborrar = findViewById(R.id.num_borrar);
-        keyborrart= findViewById(R.id.num_borrart);
+        key_PadSum = findViewById(R.id.num_sum);
+        key_Padresta = findViewById(R.id.num_resta);
+        key_PadMultiply = findViewById(R.id.num_multiply);
+        Key_Paddivide = findViewById(R.id.num_divide);
+        key_padborrar = findViewById(R.id.num_borrar);
+        key_padborrart = findViewById(R.id.num_borrart);
+        key_padigual = findViewById(R.id.igual);
         //listener for button
 
-        keyPad1.setOnClickListener(this);
-        keyPad2.setOnClickListener(this);
-        keyPad3.setOnClickListener(this);
-        keyPad4.setOnClickListener(this);
-        keyPad5.setOnClickListener(this);
-        keyPad6.setOnClickListener(this);
-        keyPad7.setOnClickListener(this);
-        keyPad8.setOnClickListener(this);
-        keyPad9.setOnClickListener(this);
-        keyPad0.setOnClickListener(this);
-        keyPadSum.setOnClickListener(this);
-        keyPadresta.setOnClickListener(this);
-        KeyPaddivide.setOnClickListener(this);
-        keyPadMultiply.setOnClickListener(this);
-        keyborrar.setOnClickListener(this);
-        keyborrart.setOnClickListener(this);
+        key_Pad1.setOnClickListener(this);
+        key_Pad2.setOnClickListener(this);
+        key_Pad3.setOnClickListener(this);
+        key_Pad4.setOnClickListener(this);
+        key_Pad5.setOnClickListener(this);
+        key_Pad6.setOnClickListener(this);
+        key_Pad7.setOnClickListener(this);
+        key_Pad8.setOnClickListener(this);
+        key_Pad9.setOnClickListener(this);
+        key_Pad0.setOnClickListener(this);
+        key_PadSum.setOnClickListener(this);
+        key_Padresta.setOnClickListener(this);
+        Key_Paddivide.setOnClickListener(this);
+        key_PadMultiply.setOnClickListener(this);
+        key_padborrar.setOnClickListener(this);
+        key_padborrart.setOnClickListener(this);
 
     }
 
@@ -71,120 +72,122 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
             case R.id.num_cero:
-                number = number + "0";
-                solucion.setText(number);
+                numero = numero + "0";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_uno:
-                number = number + "1";
-                solucion.setText(number);
+                numero = numero + "1";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_dos:
-                number = number + "2";
-                solucion.setText(number);
+                numero = numero + "2";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_tres:
-                number = number + "3";
-                solucion.setText(number);
+                numero = numero + "3";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_cuatro:
-                number = number + "4";
-                solucion.setText(number);
+                numero = numero + "4";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_cinco:
-                number = number + "5";
-                solucion.setText(number);
+                numero = numero + "5";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_seis:
-                number = number + "6";
-                solucion.setText(number);
+                numero = numero + "6";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_siete:
-                number = number + "7";
-                solucion.setText(number);
+                numero = numero + "7";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_ocho:
-                number = number + "8";
-                solucion.setText(number);
+                numero = numero + "8";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_nueve:
-                number = number + "9";
-                solucion.setText(number);
+                numero = numero + "9";
+                resultado.setText(numero);
                 break;
 
             case R.id.num_sum:
                 symbol = "+";
-                num1 = Integer.parseInt(number);
-                number = "";
+                num1 = Integer.parseInt(numero);
+                numero = "";
                 break;
 
             case R.id.num_resta:
                 symbol = "-";
-                num1 = Integer.parseInt(number);
-                number = "";
+                num1 = Integer.parseInt(numero);
+                numero = "";
                 break;
 
             case R.id.num_divide:
                 symbol = "/";
-                num1 = Integer.parseInt(number);
-                number = "";
+                num1 = Integer.parseInt(numero);
+                numero = "";
                 break;
 
             case R.id.num_multiply:
                 symbol = "X";
-                num1 = Integer.parseInt(number);
-                number = "";
+                num1 = Integer.parseInt(numero);
+                numero = "";
                 break;
-
-
-
-
-            switch (symbol){
-                case "+":
-                    solucion.setText("solucion: " + (num1 + num2));
-                    num2 = Integer.parseInt(number);
-                    break;
-                case "-":
-                    solucion.setText("solucion: " + (num1 - num2));
-                    num2 = Integer.parseInt(number);
-                    break;
-                case "/":
-                    solucion.setText("solucion: " + (num1 / num2));
-                    num2 = Integer.parseInt(number);
-                    break;
-                case "X":
-                    solucion.setText("solucion: " + (num1 * num2));
-                    num2 = Integer.parseInt(number);
-                    break;
-                default:
-                    throw new IllegalStateException("solucion: " +(number) );
-            }
-
-            case R.id.num_borrar:
-                symbol = "";
-                num1 = 0;
-                num2 = 0;
-                number = "";
-                solucion.setText("C");
-                break;
-
             case R.id.num_borrart:
                 symbol = "";
+                numero = "";
                 num1 = 0;
                 num2 = 0;
-                number = "";
+                resultado.setText("0");
                 break;
+            case R.id.num_borrar:
+                symbol = "";
+                numero = "";
+                num1 = -1;
+                num2 = -1;
+                resultado.setText("");
+                break;
+            case R.id.igual:
+                num2 = Integer.parseInt(numero);
+
+                switch (symbol){
+                    case "+":
+                        resultado.setText("resultado: " + (num1 + num2));
+                        break;
+                    case "-":
+                        resultado.setText("resultado: " + (num1 - num2));
+                        break;
+                    case "/":
+                        resultado.setText("resultado: " + (num1 / num2));
+                        break;
+                    case "X":
+                        resultado.setText("resultado: " + (num1 * num2));
+                        break;
+
+                }
+
+                num1 = 0;
+                num2 = 0;
+                numero = "";
+                break;
+
+
+
+
 
 
         }
-        break;
+
     }
 }
